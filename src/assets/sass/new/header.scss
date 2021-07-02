@@ -1,0 +1,27 @@
+@charset "utf-8";
+
+html{
+    font-size: 62.5%
+}
+
+@media(max-width:1260px){
+    html{
+        font-size: (10/1260)* 100vw;
+    }
+}
+
+@media(max-width:720px){
+    html{
+        font-size: (10/720)* 100vw;
+    }
+}
+
+/*헤더 간격용*/
+@media (max-width: 768px){
+    .wrap{
+        padding-top: 17.0rem;
+    }
+}
+
+@import './_inc_common/_header';
+@import './_inc_common/_footer';

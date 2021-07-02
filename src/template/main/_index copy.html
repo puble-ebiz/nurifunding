@@ -1,0 +1,48 @@
+@@include('../inculde/_head_top.html')
+<!--페이지 전용CSS-->
+<link rel="stylesheet" href="/static/css/etc/fullpage-scroll.css">
+<link rel="stylesheet" href="/static/css/main/init.css">
+<!--페이지 전용CSS-->
+@@include('../inculde/_head_bottom.html', { "pageName": "main" })
+
+<main class="main-wrap container" role="main">
+    <div class="main-container fullpage-area">
+        <section class="sect main-visual-sec">
+            <!-- 노출시엔 sr-only 제거 -->
+            <!-- <h1 class="">섹션 제목</h1> -->
+            <h1 class="sr-only">섹션 제목</h1>
+            <div class="visual-wrapper">
+                <div class="visual-content">
+                    <h1>제목5</h1>
+                    <h1>제목5</h1>
+                <ul class="moveBox">
+                    <li><img src="/img/img01.jpg" alt=""></li>
+                    <li><img src="/img/img02.jpg" alt=""></li>
+                    <li><img src="/img/img03.jpg" alt=""></li>
+                </ul>
+            </div>
+        </section>
+        
+        @@include('./_list_sect/_sect01.html')
+        @@include('./_list_sect/_sect02.html')
+
+        <section class="sect03"></section>
+        <section class="sect04"></section>
+        <section class="sect-last"></section>
+    </div>
+    <!-- /.sec.main-visual-sec -->
+    <div class="slider-aside"></div>
+</main>
+<!-- /.main.container -->
+
+
+<script type="text/javascript"  src="/static/js/etc/fullpage-scroll.js"></script>
+<script type="text/javascript" >
+$(document).ready(function(){
+    setFullpage(".fullpage-area","section", 350, true, ".container", ".container", ".slider-aside");
+});
+</script>
+
+
+@@include('../inculde/_bottom.html')
+

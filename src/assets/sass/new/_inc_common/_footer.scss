@@ -1,0 +1,436 @@
+.footer-new{
+    background-color: #212121;
+    width: 100%;
+    .footer-top{
+        width: 100%;
+        // background-color: #212121;
+        border-bottom: 1px solid #555;
+        .footer-wrapper{
+            margin: 0 auto;
+            // width: 1200px;
+            .nav-area{
+                width: 73.8rem;
+                margin: auto;
+                .foot-menu-ul{
+                    display: flex;
+                    justify-content: space-between;
+
+                    padding: 2.2rem 0;
+                    &>li{
+                        a{
+                            text-align: center;
+                            display: block;
+                            color: white;
+                            font-weight: 300;
+                            font-size: 1.6rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .footer-bottom{
+        max-width: 1260px;
+        margin: 0 auto;
+        padding: 0 3.0rem;
+        
+        .footer-wrapper{
+            // width: 1200px;
+            margin: 0 auto;
+            .company-info-top{
+                // margin: 0 3.0rem;
+                // padding: 0 3.0rem;
+                .company-info-ul{
+                    margin-top: 5.2rem;
+                    padding-bottom: 5.0rem;
+                    border-bottom: 2px solid #555;
+                    display: flex;  
+                    &>li{
+                        p{
+                            letter-spacing: -0.04rem;
+                        }
+                        .p-title{
+                            color: #ddd;
+                            font-size: 1.8rem;  
+                        }
+                        .p-contents{
+                            margin-top: 1.4rem;
+                            color: #999;
+                            font-size: 1.6rem;
+                            line-height: 1.4;
+                            word-break: keep-all;
+                        }
+                        &:last-of-type{
+                            margin-left: 102px;
+                        }
+                    }
+                }
+            }
+            .company-info-bottom{
+                margin-top: 3.0rem;
+                display: flex;
+                justify-content: space-between;
+                &>div{
+
+                }
+                .notice-area{
+                    
+                    .txt-area{
+                        p{
+                            // letter-spacing: -0.65px;
+                            line-height: 1.35;
+                        }
+                        .p-txt-main{
+                            color: #999;
+                            word-break: keep-all;
+                            font-size: 1.2rem;
+                        }
+                        .p-txt-sub{
+                            margin-top: 2.0rem;
+                            color: #888;
+                            word-break: keep-all;
+                            font-size: 1.3rem;
+                        }
+                    }
+                }
+                .tell-area{
+                    // flex-basis: 1;
+                    flex-grow: 1;
+                    flex-shrink: 0;
+                    margin-left: 6.2rem;
+                    padding: 0 3.0rem;
+                    .tell-service{
+                        display: flex;
+                        .tell-info-box{
+                            p{
+                                color: white;
+                            }
+                            .p-main{
+                                font-size: 2.8rem;
+                            }
+                            .p-sub{
+                                font-size: 1.6rem;
+                                margin-top: 0.8rem;
+                            }
+                        }
+                        .sns-ul{
+                            display: flex;
+                            margin-left: 4.0rem;
+                            &>li{
+                                margin-right: 1.0rem;
+                                width: 4.2rem;
+                                a{
+                                    display: block;
+                                }
+                                // &:last-of-type{
+                                //     margin-right: 0;
+                                // }
+                            }
+
+                        }
+                    }
+                    .tell-time{
+                        margin-top: 2.4rem;
+                        p{
+                            color: #ccc;
+                            margin-bottom: 0.8rem;
+                            &:last-of-type{
+                                margin-bottom: 0;
+                            }
+                        }
+                        .icon-dot{
+                            &::before{
+                                content: "ㆍ";
+                                margin-left: -0.6rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .copy-area{
+                display: flex;
+                align-items: center;
+                padding-top: 2.2rem;
+                padding-bottom: 5.0rem;
+                .footer-logo{
+                    .logo-mobile{
+                        display: none;
+                    }
+                }
+                .txt-copy{
+                    margin-left: 2.2rem;
+                    color: #bbb;
+                    font-size: 1.3rem;
+                    // line-height: 12px;
+                }
+            }
+        }
+        
+    }
+}
+
+
+@media(max-width: 1260px){
+    .footer{
+
+        .footer-top{
+
+            .footer-wrapper{
+
+                .nav-area{
+   
+                    .foot-menu-ul{
+       
+                        &>li{
+                            a{
+                      
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-bottom{
+
+            .footer-wrapper{
+
+                .company-info-top{
+
+                    .p-title{
+        
+                    }
+                    .p-contents{
+
+                    }
+                    &>div{
+                        &:last-of-type{
+                
+                        }
+                    }
+                }
+                .company-info-bottom{
+
+                    &>div{
+    
+                    }
+                    .notice-area{
+                        .txt-area{
+                            p{
+                   
+                            }
+                            .p-txt-main{
+                
+                            }
+                            .p-txt-sub{
+                  
+                            }
+                        }
+                    }
+                    .tell-area{
+                        
+                        .tell-service{
+                            
+                            .tell-info-box{
+                                p{
+                                    
+                                }
+                                .p-main{
+                                  
+                                }
+                                .p-sub{
+                                
+                                }
+                            }
+                            .sns-ul{
+                        
+                                &>li{
+                                
+                                    a{
+                                  
+                                    }
+                       
+                                }
+    
+                            }
+                        }
+                        .tell-time{
+                
+                            p{
+                              
+                            }
+                            .icon-dot{
+                                &::before{
+                      
+                                }
+                            }
+                        }
+                    }
+                }
+                .copy-area{
+      
+                    .txt-copy{
+     
+                    }
+                }
+            }
+            
+        }
+    }
+}
+
+@media(max-width: 720px){
+    .footer-new{
+
+        .footer-top{
+
+            .footer-wrapper{
+                .nav-area{
+                    width: 70%;
+                    .foot-menu-ul{
+                        flex-wrap: wrap;
+                        flex-direction: row;
+                        // justify-content: center;
+                        padding: 4.0rem 0;
+                        &>li{
+                            // width: 33%;
+                            // flex-basis: auto;
+                            // flex-grow: 0.3;
+                            a{
+                                font-size: 2.2rem;
+                            }
+                            &:first-of-type{
+                                margin-left: 3.0rem;
+                            }
+                            &:nth-of-type(3){
+                                margin-right: 3.0rem;
+                            }
+
+                            &:nth-of-type(n+4){
+                                margin-top: 3.0rem;
+                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .footer-bottom{
+            padding: 0;
+            .footer-wrapper{
+
+                .company-info-top{
+                    padding: 0 3.0rem;
+                    .company-info-ul{
+                        flex-direction: column;
+                        border: none;
+                        padding-bottom: 0;
+                        &>li{
+                            .p-title{
+                                font-size: 2.75rem;
+                            }
+                            .p-contents{
+                                font-size: 2.35rem;
+                            }
+                            &:last-of-type{
+                                margin-top: 3.8rem;
+                                margin-left: 0;
+                            }
+                        }
+                    }
+                }
+                .company-info-bottom{
+                    flex-direction: column;
+                    margin-top: 7.0rem;
+                    &>div{
+    
+                    }
+                    .notice-area{
+                        background-color: #f1f3f4;
+                        order: 2;
+                        margin-top: 5.7rem;
+                        padding: 6.0rem 3.0rem;
+                        .txt-area{
+                            p{
+                                
+                            }
+                            .p-txt-main{
+                                font-size: 2.4rem;
+                            }
+                            .p-txt-sub{
+                                font-size: 2.15rem;
+                            }
+                        }
+                    }
+                    .tell-area{
+                        margin-left: 0;
+                        order: 1;
+                        .tell-service{
+                            
+                            .tell-info-box{
+                                p{
+                                    
+                                }
+                                .p-main{
+                                    font-size: 3.85rem;
+                                }
+                                .p-sub{
+                                    font-size: 2.4rem;
+                                }
+                            }
+                            .sns-ul{
+                        
+                                &>li{
+                                    margin-right: 2.0rem;
+                                    width: 7.0rem;
+                                    a{
+                                  
+                                    }
+                       
+                                }
+    
+                            }
+                        }
+                        .tell-time{
+                            
+                            p{
+                              font-size: 2.4rem;
+                              letter-spacing: -0.6px;
+                            }
+                            .icon-dot{
+                                &::before{
+                      
+                                }
+                            }
+                        }
+                    }
+                }
+                .copy-area{
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0 3.0rem;
+                    padding-top: 4.4rem;
+                    padding-bottom: 6.0rem;
+                    background-color: #fff;
+                    .footer-logo{
+                        .logo-pc{
+                            display: none;
+                        }
+                        .logo-mobile{
+                            display: block;
+                            img{
+                                width: 25.0rem;
+                            }
+                        }
+                    }
+                    .txt-copy{
+                        margin-top: 0.8rem;
+                        margin-left: 0;
+                        font-size: 2.15rem;
+                    }
+                }
+            }
+            
+        }
+    }
+}

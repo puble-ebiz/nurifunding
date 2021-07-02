@@ -1,0 +1,80 @@
+
+/*==스타일 공통==*/
+.sty-btn-white{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px white;
+    border-radius: 4px;
+    color: white;
+    height: 50px;
+    width: 220px;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+}
+@media(max-width:720px){
+.sty-btn-white{
+    width: 35.0rem;
+    height: 7.0rem;
+    font-size: 3.2rem;
+    font-weight: 300;
+    letter-spacing: -0.7px;
+}
+}
+
+
+.sty-btn-gray{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: solid 1px #acb4bb;
+    border-radius: 4px;
+    color: #333;
+    height: 50px;
+    width: 220px;
+    font-size: 20px;
+    letter-spacing: -0.5px;
+}
+
+
+@media(max-width:720px){
+    .sty-btn-gray{
+        width: 35.0rem;
+        height: 7.0rem;
+        font-size: 3.2rem;
+        font-weight: 300;
+        letter-spacing: -0.7px;
+    }
+}
+    
+
+.sty-txt-color-blue{
+    color: #398fe1 !important;
+}
+
+.sty-txt-color-blue01{
+    color: #158fdc !important;
+}
+
+
+.sty-btn-bar-gray{
+    background: none;
+    color: #333;
+    font-size: 3.0rem;
+    letter-spacing: -1.2px;
+    position: relative;
+    &::after{
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -0.5rem;
+        background-color: #333;
+        width: 100%;
+        height: 0.2rem;
+
+    }
+}
+
+.sty-txt-bold{
+    font-weight: bold;
+}

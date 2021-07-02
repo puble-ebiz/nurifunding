@@ -1,0 +1,147 @@
+//이점
+.main-wrap .main-container{
+    
+    .sect-advantage{
+        background-color: #126cc3;
+        .sect-wrapper{
+            // width: 1200px;
+            width: 100%;
+            .sect-contents{
+                display: flex;
+                border-bottom: 1px solid #89b6e1;
+                justify-content: space-around;
+                align-items: center;
+                &:last-of-type{
+                    border: none;
+                }
+                
+                .title-area{
+                    color: white;
+                    text-align: center;
+                    .title-main{
+                        font-size: 4.0rem;
+                        line-height: 1.3;
+                        font-weight: 500;
+                    }
+                    .title-sub{
+                        font-size: 2.0rem;
+                        margin-top: 4.6rem;
+                        line-height: 1.6;
+                        font-weight: 300;
+                        
+                    }
+                }
+                .contents-area{
+
+                }
+
+            }
+
+            .cont01{
+                padding-bottom: 8.0rem;
+                .contents-area{
+                    .emphasis-ul{
+                        &>li{
+                            border-radius: 4px;
+                            background-color: white;
+                            width: 45.0rem;
+                            height: 7.0rem;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            margin-bottom: 2.0rem;
+                            font-size: 2.4rem;
+                            &:last-of-type{
+                                margin-bottom: 0;
+                            }
+                            p{
+                                .span-mark {
+                                    font-weight: 600;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .cont02{
+                margin-top: 8.0rem;
+                .contents-area{
+                    .img-box{
+                        img{
+                            width: 47.9rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+}
+
+
+@media(max-width: 720px){
+    .main-wrap .main-container{
+        
+        .sect-advantage{
+            padding-top: 10.0rem;
+            padding-bottom: 12.3rem;
+            .sect-wrapper{
+                .sect-contents{
+                    flex-direction: column;
+                    &:last-of-type{
+        
+                    }
+                    
+                    .title-area{
+                
+                        .title-main{
+                            font-size: 4.8rem;
+                            letter-spacing: -3.5px;
+                        }
+                        .title-sub{
+                            font-size: 2.8rem;
+                            .span-block{
+                                display: block;
+                            }
+                            
+                        }
+                    }
+                    .contents-area{
+                        
+                    }
+
+                }
+
+                .cont01{
+                    .contents-area{
+                        margin-top: 5.8rem;
+                        .emphasis-ul{
+                            &>li{
+                                width: 60.0rem;
+                                height: 10.0rem;
+                                p{
+                                    font-size: 3.25rem;
+                                    letter-spacing: -1.6px;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+                .cont02{
+                    .contents-area{
+                        margin: 0 auto;
+                        margin-top: 13.4rem;
+                        .img-box{
+                            
+                            img{
+                                width: 60.0rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+}

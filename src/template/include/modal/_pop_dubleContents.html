@@ -1,0 +1,122 @@
+
+<!--온투법/리브메이트 팝업 관련-->
+<link rel="stylesheet" href="/static/css/new/pop/pop_duble.css">
+<!--./온투법/리브메이트 팝업 관련-->
+
+
+<!-- 팝업(리브메이트, 온투법) -->
+<div class="pop-duble">
+    <div class="pop-area">
+        <div class="pop-box pop01">
+            <div class="pop-main-box">
+                <a href="https://www.nurifunding.co.kr/notice/view.php?var=EU1x&page=1">
+                    <img class="img-pc" src="https://www.nurifunding.co.kr/img/notice/200807_notice_pop.jpg" alt="온투법 팝업 PC">
+                    <img class="img-m" src="https://www.nurifunding.co.kr/img/notice/200807_notice_m_pop.jpg" alt="온투법 팝업 모바일">
+                </a>
+            </div>
+            <div class="pop-btn-box">
+                <button class="btn-not-day" type="button">오늘 하루 보지 않기</button>
+                <button class="btn-close-pop" type="button">창 닫기</button>
+            </div>
+        </div>
+        <div class="pop-box pop02">
+            <div class="pop-main-box">
+                <a href="https://www.nurifunding.co.kr/notice/view.php?var=EU11&page=1">
+                    <img class="img-pc" src="https://www.nurifunding.co.kr/img/notice/200723_liiv_pop.jpg" alt="리브메이트 팝업 PC">
+                    <img class="img-m" src="https://www.nurifunding.co.kr/img/notice/200723_liiv_m_pop.jpg" alt="온투법 팝업 모바일">
+                </a>
+            </div>
+            <div class="pop-btn-box">
+                <button class="btn-not-day" type="button">오늘 하루 보지 않기</button>
+                <button class="btn-close-pop" type="button">창 닫기</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 팝업(리브메이트, 온투법) -->
+
+
+
+<script>
+    //임시보관(document.redy 안에)
+    
+    //==온투법/리브메이트==
+    //쿠키이름
+    let cokieName01 = "pop_liivemate";
+    let cokieName02 = "pop_ontolaw";
+
+    //하루 안보기 둘 중 하나만 등록되었다면 스크롤 막기
+    if($.cookie(cokieName01) == undefined || $.cookie(cokieName02) == undefined){
+        //하루 안보기 등록되었다면 그 팝업 가리기
+        if($.cookie(cokieName01) != undefined){
+            $('.pop-duble .pop01').hide();
+        }
+        if($.cookie(cokieName02) != undefined){
+            $('.pop-duble .pop02').hide();
+        }
+
+        //임시로 안보이게 막음(온투법/리브메이트)
+        $(".pop-duble").show();
+        // $(".pop-duble").hide();
+
+        // $('html, body').addClass('pop-non-scroll');
+        //스크롤 막기
+        if($(".pop-duble").is(':visible') == true){
+            fullpage.setOn(false);
+        }
+    }
+
+    //닫기 버튼
+    $(".pop-duble .btn-close-pop").on('click', function(){
+        //선택된 팝업창 숨기기
+        let popBox = $(this).parent().parent();
+        popBox.hide();
+        //팝업창 모두 닫혔는지 체크
+        console.log($(this));
+        checkCloseAllPopup();
+    });
+    //하루 안보기 버튼
+    $(".btn-not-day").on('click', function(){
+        //선택된 팝업창 숨기기
+        let popBox = $(this).parent().parent();
+        if($(popBox).hasClass('pop01')){
+            addCookieData(cokieName01)
+        }
+        if($(popBox).hasClass('pop02')){
+            addCookieData(cokieName02)
+        }
+        // if($(popBox).hasClass('pop-box-mobile')){
+        //     addCookieData(cokieName01)
+        //     addCookieData(cokieName02)
+        // }
+
+        popBox.hide();
+        //팝업창 모두 닫혔는지 체크
+        checkCloseAllPopup();
+    });
+
+    //쿠키데이터 등록
+    addCookieData = function(popName){
+        if($.cookie(popName) == undefined){
+            //초단위 테스트용
+            var date = new Date;
+            date.setTime(date.getTime() + 8*1000);
+            $.cookie(popName, 'Y', { expires: date});
+
+            //쿠키가 없는 경우 testCookie 쿠키를 추가
+            // $.cookie(popName, 'Y', { expires: 1});
+            //$.removeCookie('pop_liivemate');
+        } 
+    }
+
+    checkCloseAllPopup = function(){
+        let pop01 = $('.pop-duble .pop01').is(':visible');
+        let pop02 = $('.pop-duble .pop02').is(':visible');
+        if(pop01 == false && pop02 == false){
+            $(".pop-duble").hide();
+            // $('html, body').removeClass("pop-non-scroll");
+            fullpage.setOn(true);
+        }
+    }
+</script>

@@ -1,0 +1,61 @@
+<div class="modal-request">
+    <div class="modal-request-area">
+        <button type="button" class="btn-close-request">
+            <img src="http://design.ebiznetworks.co.kr/lhc/nuri_renew/img/new/main/btn_close_request.png" alt="닫기">
+        </button>
+        <div class="title-box">
+            <h3 class="title">상담신청</h3>
+            <div class="title-logo">
+                <img src="http://design.ebiznetworks.co.kr/lhc/nuri_renew/img/new/main/logo_name.png" alt="로고">
+            </div>
+        </div>
+        <div class="contents-box">
+            <form action="" class="contents-form">
+                <ul class="input-ul">
+                    <li>
+                        <input type="text" id="in-name" class="in-name" placeholder="이름을 입력하세요">
+                    </li>
+                    <li>
+                        <input type="number" id="in-phone" class="in-name" placeholder="전화번호를 입력하세요(숫자만 입력)">
+                    </li>
+                    <li>
+                        <input type="text" id="in-email" class="form-input" value="" placeholder="이메일을 입력하세요">
+                    </li>
+                    <li>
+                    <select class="select-list">
+                        <option value="">상담 항목선택</option>
+                        <option value="">대출신청</option>
+                        <option value="">투자하기</option>
+                        <option value="">미리페이(선정산)</option>
+                        <option value="">기타</option>
+                    </select>
+                    <li>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="내용을 간단하게 입력해주세요" class="in-txt"></textarea>
+                    </li>
+                </ul>
+                <div class="policy-box">
+                    <div class="policy-top">
+                        <div class="policy-agree">
+                            <input type="checkbox" id="check-agree" class="agree-check">
+                            <label for="check-agree" class="agree-label">개인정보 취급방침 동의</label>
+                        </div>
+                        <div class="policy-detail">
+                            <button type="button" class="btn-detail-policy">
+                                <span>자세히 보기</spa>
+                                <span class="icon-arrow-top"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="policy-bottom">
+                        @@include('./_request_policy.html')
+                    </div>
+                </div>
+
+
+                <button type="button" class="btn-apply-request">상담신청</button>
+            </form>
+
+            <p class="request-notice">※ 신청해주신 정보를 통해 24시간 이내로 고객님께 연락드리겠습니다.</p>
+        </div>
+    </div>
+</div>

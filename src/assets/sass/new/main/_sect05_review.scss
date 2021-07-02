@@ -1,0 +1,438 @@
+//리뷰-secrt
+.main-wrap .main-container,{
+    .sect-review,.sect-last{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: #eee;
+        //리뷰
+        .sect-area-review{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            flex-grow: 1;
+            .sect-contents{
+                .title-main{
+                    text-align: center;
+                    color: #202020;
+                    font-size: 5.5rem;
+                }
+                .btn-go-review{
+                    margin: 0 auto;
+                    margin-top: 5.0rem;
+                }
+                .reivew-slide-area{
+                    display: flex;
+                    // max-width: 1260px;
+                    margin-top: 7.5rem;
+                    padding: 0 3.0rem;
+                    justify-content: space-between;
+                    align-items: center;
+                    .review-contents{
+                        max-width: 1200px;
+                        width: 100%;
+                        .review-ul{
+                            li.review-item{
+                                border: 1px solid #acb4bb;
+                                box-shadow: 5px 8px 0 0 rgba(0, 0, 0, 0.1);
+                                height: 25.0rem;
+                                padding: 0 3.0rem;
+                                padding-top: 4.0rem;
+                                margin: 0 1.5rem;
+                                margin-bottom: 0.8rem;
+                                .title-box{
+                                    .name-box{
+                                        display: flex;
+                                        align-items: flex-end;
+                                        .p-name{
+                                            color: #398fe1;
+                                            font-size: 2.0rem;
+                                            
+                                        }
+                                        .p-job{
+                                            margin-left: 2.0rem;
+                                            color: #555;
+                                            font-size: 1.6rem;
+                                        }
+                                    }
+                                    .grade-box{
+                                        margin-top: 1.0rem;
+                                        span{
+                                            font-size: 2.0rem;
+                                        }
+                                        .star-up{
+                                            color: #ffbf00;
+                                        }
+                                        .star-none{
+                                            color: #ddd;
+                                        }
+                                    }
+                                }
+                                .txt-box{
+                                    color: #555;
+                                    line-height: 1.38;
+                                    font-size: 1.6rem;
+                                    font-weight: 300;
+                                    margin-top: 3.5rem;
+                                }
+                            }
+                        }
+                    }
+                    .btn-slide{
+                        width: 2.6rem;
+                        img{
+                            // width: 100%;
+                        }
+                        
+                    }
+                    
+                    .btn-slide-prev{
+                        margin-left: -3.0rem;
+                    }
+                    
+                    .btn-slide-next
+                    {
+                        margin-right: -3.0rem;
+                    }
+                    
+                }
+                .reivew-slide-control{
+                    .slick-dots{
+                        margin-top: 3.0rem;
+                        display: flex;
+                        justify-content: center;
+                        &>li{
+                            margin: 0 0.5rem;
+                            button{
+                                outline: none;
+                                border-radius: 50%;
+                                background-color: #ccc;
+                                width: 2.0rem;
+                                height: 2.0rem;
+                            }
+                        }
+                        &>li.slick-active{
+                            button{
+                                background-color: #398fe1;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        //배너
+        .sect-area-banner{
+            .sect-contents{
+                max-width: none;
+                .banner-slide-area{
+                    position: relative;
+                    .banner-slide-control{
+                        z-index: 10;
+                        max-width: 1260px;
+                        width: 100%;
+                        margin: 0 auto;
+                        top: 50%;
+                        left: 0;
+                        right: 0;
+                        position: absolute;
+                        .btn-slide{
+                            position: absolute;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            // background-color: rgba(0, 0, 0, 0.3);
+                            width: 30px;
+                            height: 50px;
+                            color: white;
+                            // margin-top: ;
+                            transform: translateY(-50%);
+                          
+                        }
+
+                        .btn-slide-prev{
+                            left: 0;
+                        }
+                        .btn-slide-next{
+                            right: 0;
+                        }
+
+                    }
+                    .banner-ul{
+                        height: 15.0rem;
+                        .slick-list{
+                            height: 100%;
+                            
+                            .slick-track{
+                                height: 100%;
+                            }
+                        }
+                        .item-banner{
+                            
+                            height: 100%;
+                            .banner-contents{
+                                margin: 0 auto;
+                                max-width: 1260px;
+                                padding: 0 15.0rem;   
+                                width: 100%;
+                                height: 100%;
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                &>div{
+                                    
+                                }
+                                .txt-box{
+                                    
+                                    p{
+                                        // color: white;
+                                        letter-spacing: -0.1px;
+                                    }
+                                    .p-title{
+                                        font-size: 2.8rem;
+                                        font-weight: 400;
+                                        .txt-high{
+                                            font-weight: 600;
+                                        }
+                                    }
+                                    .p-contents{
+                                        margin-top: 1.2rem;
+                                        font-size: 1.6rem;
+                                        line-height: 1.4;
+                                    }
+                                    .p-contents-mobile{
+                                        display: none;
+                                    }
+                                    
+                                }
+                                
+                            }
+                            
+                        }
+                        .banner01{
+                            background-color: #5237a7;
+                            .txt-box{
+                                    
+                                p{
+                                    color: #fff;
+                                }
+                            }
+                            .img-box{
+                                width: 22.7rem;
+                            }
+                        }
+                        .banner02{
+                            background-color: #ffde79;
+                            .txt-box{
+                                    
+                                p{
+                                    color: #333;
+                                }
+                            }
+                            .img-box{
+                                // margin-right: 8.0rem;
+                                width: 17.0rem;
+                            }
+                        }
+                        
+                    }
+                }
+
+                
+            }
+        }
+    }
+    
+}
+
+@media(max-width: 1260px){
+    .reivew-slide-area{
+        .btn-slide{
+            display: none;
+        }
+    }
+    .banner-slide-area{
+        
+    }
+}
+
+
+
+@media(max-width: 720px){
+.main-wrap .main-container{
+    .sect-review, .sect-last{
+        padding-top: 10.0rem;
+        // padding-bottom: 8.8rem;
+        .sect-area-review{
+            padding-bottom: 8.8rem;
+            .sect-contents{
+                .title-main{
+                    font-size: 5.2rem;
+                }
+                .reivew-slide-area{
+                    padding: 0;
+                    .review-contents{
+                        .review-ul{
+                            li.review-item{
+                                // width: 12800px;
+                                // padding: 0;
+                                padding: 0 4.5rem;
+                                padding-top: 6.0rem;
+                                // padding-bottom: 5.0rem;
+                                margin-bottom: 0;
+                                box-shadow: none;
+                                width: 54.0rem;
+                                height: 37.5rem;
+                                .title-box{
+                                    .name-box{
+                                        .p-name{
+                                            font-size: 3.0rem;
+                                        }
+                                        .p-job{
+                                            font-size: 2.4rem;
+                                        }
+                                    }
+                                    .grade-box{
+                            
+                                        span{
+                                            font-size: 3.6rem;
+                                        }
+                                        .star-up{
+                                    
+                                        }
+                                        .star-none{
+                                    
+                                        }
+                                    }
+                                }
+                                .txt-box{
+                                    font-size: 2.4rem;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sect-area-banner{
+            .sect-contents{
+                
+                .banner-slide-area{
+                
+                    .banner-slide-control{
+                
+                        .btn-slide{
+                            display: none;
+                        }
+                        .btn-slide-prev{
+                            
+                        }
+                        .btn-slide-next{
+                            
+                        }
+
+                    }
+                    .banner-ul{
+                  
+                        .slick-list{
+                  
+                            
+                            .slick-track{
+                  
+                            }
+                        }
+                        .item-banner{
+                            .banner-contents{
+                                padding-left:4.0rem;
+                                padding-right: 2.7rem;
+                                &>div{
+                                    
+                                }
+                                .txt-box{
+                                    p{
+                                    
+                                    }
+                                    .p-title{
+                                        font-size: 2.76rem;
+                                        letter-spacing: -1.4px;
+                                        .txt-high{
+                                    
+                                        }
+                                    }
+                                    .p-contents{
+                                        display: none;
+                                    }
+                                    .p-contents-mobile{
+                                        margin-top: 0.9rem;
+                                        display: block;
+                                        font-size: 2.36rem;
+                                        font-weight: 200;
+                                        letter-spacing: -0.6px;
+                                        line-height: 1.3;
+                                    }
+                                
+                                }
+                            }
+                            
+                        }
+                        .banner01{
+                            background-color: #5237a7;
+                            .txt-box{
+                                    
+                                p{
+                                    color: #fff;
+                                }
+                            }
+                            .img-box{
+                                width: 22.4rem;
+                            }
+                        }
+                        .banner02{
+                            background-color: #ffde79;
+                            .txt-box{
+                                    
+                                p{
+                                    color: #333;
+                                }
+                            }
+                            .img-box{
+                                width: 16.4rem;
+                            }
+                        }
+                    }
+                }
+
+                // .miripay-area{
+                //     display: flex;
+                //     justify-content: space-between;
+                //     align-items: center;
+                //     .arrow{
+                //         display: flex;
+                //         justify-content: center;
+                //         align-items: center;
+                        
+                //         background-color: #422c86;
+                //         width: 30px;
+                //         height: 50px;
+                //         span{
+                //             font-size: 15px;
+                //             font-family: 'Nanum Gothic', sans-serif;
+                //             font-weight: 800;
+                //             color: white;
+                //         }
+                //     }
+                //     .miripay-ul{
+                //         // display: flex;
+                //         &>li{
+                //             display: flex;
+                //             .txt-box{
+                //                 color: white;
+                //             }
+                //         }
+                //     }
+                // }
+                
+            }
+        }
+    }
+}
+}

@@ -1,0 +1,237 @@
+.main-wrap .main-container{
+    
+    .sect-service{
+        background-color: #398fe1;
+        .sect-wrapper{
+            display: flex;
+            justify-content: center;
+            justify-items: center;
+            .sect-contents{
+                .title-area{
+                    color: white;
+                    text-align: center;
+                    .title-main{
+                        font-size: 5.5rem;
+                    }
+                }
+
+                .contents-area{
+                    .service-ul{
+                        display: flex;
+                        // max-width: 1260px;
+                        // width: 100%;
+                        margin: 0 auto;
+                        margin-top: 7.0rem;
+                        padding: 0 4.0rem;
+                        justify-content: space-between;
+                        &>li{
+                            border-radius: 4px;
+                            padding: 0 3.0rem;
+                            padding-top: 5.0rem;
+                            padding-bottom: 3.0rem;
+                            // margin: 0 10px;
+                            background-color: white;
+                            text-align: center;
+                            .title{
+                                font-size: 3.0rem;
+                            }
+                            .p-txt{
+                                margin-top: 3.0rem;
+                                color: #333;
+                                font-size: 1.8rem;
+                                font-weight: 300;
+                                line-height: 1.36;
+                            }
+                            .sub-area{
+                                .txt-sub-box{
+                                    .p-sub{
+                                        margin-top: 4.2rem;
+                                        color: #333;
+                                        font-size: 1.8rem;
+                                        font-weight: 500;
+                                    }
+                                    .p-hesh{
+                                        margin-top: 4.0rem;
+                                        
+                                    }
+                                    .p-hesh01{
+                                        color: #398fe1;
+                                    }
+                                    .p-hesh02{
+                                        color: #3959e1;
+                                    }
+                                    .p-hesh03{
+                                        color: #00b3be;
+                                    }
+                                }
+
+
+                                .btn-go{
+                                    // margin: 0 auto;
+                                    margin-top: 2.8rem;
+                                    position: relative;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    color: white;
+                                    font-size: 2.2rem;
+                                    font-weight: 300;
+                                    border-radius: 0.5rem;
+                                    width: 32.0rem;
+                                    height: 6.0rem;
+                                    .icon-arrow::after{
+                                        content: "⇀";
+                                        font-size: 3.0rem;
+                                        // font-weight: 400;
+                                        line-height: 1.0rem;
+                                        position: absolute;
+                                        top: 50%;
+                                        transform: translateY(-50%) scaleX(1.2);
+                                        
+                                        margin-left: 1.0rem;
+                                    }
+                                }
+                                .btn-go01{
+                                    background-color: #398fe1;
+                                }
+                                .btn-go02{
+                                    background-color: #3966ed;
+                                }
+                                .btn-go03{
+                                    background-color: #00b3be;
+                                }
+                            }
+                            &:hover{
+                                position: relative;
+                                transform: translateY(-1.0rem);
+                                box-shadow: 0.5rem 0.87rem 2px rgba(0, 0, 0, 0.2);
+                            }
+                        }
+                    }
+                }
+                .btn-go-guide{
+                    margin: 0 auto;
+                    margin-top: 7.5rem;
+                }
+            }
+        }
+            
+    }
+    
+}
+
+
+@media(max-width: 720px){
+.main-wrap .main-container{
+    
+    .sect-service{
+        padding-top: 10.0rem;
+        padding-bottom: 7.0rem;
+        .sect-wrapper{
+            .sect-contents{
+                .title-area{
+                    .title-main{
+                        
+                    }
+                    
+                }
+
+                .contents-area{
+                    .service-ul{
+                        flex-direction: column;
+                        
+                        &>li{
+                            border-radius: 0.8rem;
+                            margin-bottom: 3.8rem;
+                            padding-left: 6.0rem;
+                            padding-right: 3.0rem;
+                            padding-top: 4.6rem;
+                            padding-bottom: 3.0rem;
+                            &:last-of-type{
+                                margin-bottom: 0;
+                            }
+                            .title{
+                                font-size: 4.1rem;
+                                letter-spacing: -1px;
+                            }
+                            .title01{
+                                color: #398fe1;
+                            }
+                            .title02{
+                                color: #3966ed;
+                            }
+                            .title03{
+                                color: #00b3be;
+                            }
+                            .p-txt{
+                                font-size: 2.9rem;
+                                line-height: 1.26;
+                                letter-spacing: -0.7px;
+                            }
+                            .sub-area{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                margin-top: 3.2rem;
+                                .txt-sub-box{
+                                    .p-sub{
+                                        text-align: left;
+                                        font-size: 3.0rem;
+                                        letter-spacing: -0.7px;
+                                        margin-top: 0;
+                                    }
+                                    .p-hesh{
+                                        text-align: left;
+                                        font-size: 2.6rem;
+                                        letter-spacing: 0;
+                                        margin-top: 1.8rem;
+                                    }
+                                    .p-hesh01{
+                                        color: #398fe1;
+                                    }
+                                    .p-hesh02{
+                                        color: #398fe1;
+                                    }
+                                    .p-hesh03{
+                                        color: #398fe1;
+                                    }
+                                }
+
+                                .btn-go{
+                                    border-radius: 0.8rem;
+                                    width: 9.0rem;
+                                    height: 9.0rem;
+                                    margin-top: 0;
+                                    .icon-arrow::after{
+                                        font-size: 5.0rem;
+                                        top: 48%;
+                                        left: 15%;
+                                    }
+                                    .span-hidden{
+                                        display: none;
+                                    }
+                                }
+                                .btn-go01{
+                                    
+                                }
+                                .btn-go02{
+                                    
+                                }
+                                .btn-go03{
+                                    
+                                }
+                            }
+
+                        }
+                    }
+                }
+                .btn-go-guide{
+
+                }
+            }
+        }
+            
+    }
+    
+}
+}

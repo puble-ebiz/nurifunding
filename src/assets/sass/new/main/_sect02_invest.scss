@@ -1,0 +1,162 @@
+.main-wrap .main-container{
+    
+    .sect-invest{
+        color: white;
+        background-color: #003399;
+        // justify-content: center;
+        .sect-wrapper{
+            width: 100%;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            .sect-contents{
+                .title-area{
+                    // margin: 0 auto;
+                    text-align: center;
+                    .title-main{
+                        font-size: 5.5rem;
+                    }
+                    .title-sub{
+                        margin-top: 2.8rem;
+                        font-size: 3.5rem;
+                    }
+                }
+                .contents-area{
+                    margin-top: 9.6rem;
+                    .invest-ul{
+                        margin: 0 auto;
+                        //width: 100%;
+                        //max-width: 1200px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: stretch;
+                        &>li{
+                            // margin:0 26px;
+                            text-align: center;
+                            display: flex;
+                            flex-direction: column;
+                            width: 25%;
+                            &:first-of-type .txt-box{
+                                // padding-left: 0;
+                            }
+                            &:last-of-type .txt-box{
+                                border: none;
+                                // padding-right: 0; 
+                            }
+                            .img-box{
+                                img{
+                                    // width: auto;
+                                    width: 12.4rem;
+                                }
+                            }
+                            .txt-box{
+                                // padding: 0 4.4rem;
+                                margin-top: 2.8rem;
+                                border-right: 1px solid #335cad;
+                                flex-grow: 1;
+                                
+
+                                .p-title{
+                                    color: #4ea9ff;
+                                    font-size: 3.0rem;
+                                    line-height: 3.0rem;
+                                }
+
+                                .p-contents{
+                                    font-size: 1.8rem;
+                                    line-height: 1.36;
+                                    margin-top: 3.2rem
+                                }
+                            }
+                        }
+                    }
+                    .btn-go-invest{
+                        margin: 0 auto;
+                        margin-top: 7.5rem;
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+
+
+@media(max-width: 720px){
+.main-wrap .main-container{
+    
+    .sect-invest{
+        padding-top: 10.0rem;
+        padding-bottom: 8.0rem;
+        .sect-wrapper{
+
+            .sect-contents{
+                .title-area{
+
+                    .title-main{
+    
+                    }
+                    .title-sub{
+
+                    }
+                }
+                .contents-area{
+    
+                    .invest-ul{
+                        flex-wrap: wrap;
+                        &>li{
+                            width: 46%;
+                            &:first-of-type{
+                                border: 2px solid #335cad;
+                                border-top: none;
+                                border-left: none;
+                            }
+                            &:nth-of-type(2){
+                                border-bottom: 2px solid #335cad;
+                            }
+                            &:nth-of-type(3){
+                                border-right: 2px solid #335cad;
+                            }
+
+                            &:last-of-type{
+                                
+                            }
+                            &:nth-of-type(-n+2){
+                                padding-bottom: 3.7rem;
+                            }
+                            &:nth-of-type(n+3){
+                                padding-top: 3.5rem;
+                            }
+                            .img-box{
+                                
+                                img{
+                                    // width: 12.4rem;
+                                }
+                            }
+                            .txt-box{
+                                border: none;
+                                .p-title{
+                                    font-size: 3.5rem;
+                                    line-height: 1;
+                                }
+
+                                .p-contents{
+                                    margin-top: 1.8rem;
+                                    font-size: 2.5rem;
+                                }
+                            }
+                        }
+                    }
+                    .btn-go-invest{
+        
+                    }
+                }
+            }
+            
+        }
+    }
+    
+}
+}

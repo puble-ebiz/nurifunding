@@ -1,0 +1,63 @@
+.overflow-hidden{
+    overflow: hidden;
+    // height: auto;
+}
+
+.fullpage-area{
+    position: relative;
+    height: 100%;
+}
+
+@media(max-width:720px){
+.fullpage-area{
+    height: auto;   
+}
+}
+
+
+.page-control-box{
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 3.0rem;
+    // width: 200px;
+    .page-control-ul{
+        position: relative;
+        width: 100%;
+    
+        li{
+            width: 12px;
+            height: 12px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            background-color: #80add9;
+            cursor: pointer;
+            // border: 4px solid #a0a0a0;
+    
+            &.btn-active{
+                background-color: #0b50b1;
+            }
+        }
+    }
+}
+
+
+
+@media(max-width:720px){
+
+    .page-control-box{
+        right: 1.4rem;
+        .page-control-ul{
+        
+            li{
+                width: 10px;
+                height: 10px;
+                &.btn-active{
+                    
+                }
+        
+            }
+            
+        }
+    }
+}

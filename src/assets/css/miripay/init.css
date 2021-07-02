@@ -1,0 +1,48 @@
+/* 공통사항 */
+.contents {
+    box-sizing: border-box;
+}
+.contents [class*='in-wrap'] {
+    margin: 0 auto;
+    width: 1020px;
+}
+section [class*='emph'] {
+    color: #3088dd;
+}
+section .info-tit [class*='emph'] {
+    font-size: 32px;
+}
+section .info-sub {
+    font-size: 18px;
+    color: #888;
+}
+
+/* Head */
+.top-head {
+    padding: 60px 0 20px;
+    background: #0a6cc4;
+    color: #fff;
+}
+
+/* Main */
+.miripay-main {
+    padding: 50px 0;
+    background: #398fe1;
+    color: #fff;
+}
+.miripay-main figure {
+    padding: 30px 50px;
+    border-radius: 10px;
+    background: #fff;
+}
+/* Section */
+.miripay-info {
+}
+.miripay-info .info-cont {
+}
+
+/* Service Form */
+.miripay-service {
+}
+.miripay-service .service-form {
+}

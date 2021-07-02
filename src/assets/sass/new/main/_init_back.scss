@@ -1,0 +1,1144 @@
+@charset "utf-8";
+
+html{
+    // font-size: (10/1024)* 100vw;
+}
+
+@media(max-width:1260px){
+    html{
+        font-size: (10/1260)* 100vw;
+    }
+}
+
+@media(max-width:720px){
+    html{
+        font-size: (10/720)* 100vw;
+    }
+}
+
+html,body{
+    overflow: hidden;
+    height: 100%;
+}
+body *{
+    letter-spacing: -0.04rem;
+    line-height: 1.0;
+}
+
+.wrapper, .container{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+@media(max-width:720px){
+    html,body{
+        overflow: auto;
+        height: 100%;
+    }
+
+    .wrapper, .container{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+.fullpage-area{
+    position: relative;
+    height: 100%;
+}
+
+@media(max-width:720px){
+.fullpage-area{
+    
+}
+} 
+
+.main-wrap{
+    .main-container{
+        &>section{
+            // width: 100%;
+            height: 100%;
+            padding-top: 9.0rem;
+            display: flex;
+            flex-direction: column;
+            // padding: 50px;
+            justify-content: center;
+            align-items: center;
+            // margin: 0 auto;
+            .sect-wrapper{
+                // flex-grow: 1;
+                //width: 1200px;
+                width: 100%;
+                .sect-contents{
+                    max-width: 1260px;
+                    width: 100%;
+                    // padding: 0 30px;
+                    margin: 0 auto;
+                }
+            }
+        }
+        .sect01{
+            // background-color: #126cc3;
+            position: relative;
+            justify-content: flex-end;
+            padding-top: 0;
+            .sect-area01{
+                // padding-top: 9.0rem;
+                // background-color: yellow;
+                // justify-items: flex-start;
+                flex-grow: 1;
+                .sect-contents{
+                    max-width: none;
+                    height: 100%;
+                    // position: relative;
+                }
+            }
+            .sect-area02{
+                position: relative;
+                width: 100%;
+                // height: 210px;
+                padding-top: 6.4rem;
+                padding-bottom: 7.4rem;
+                background-color: white;
+                .sect-contents{
+                    // width: 1200px;
+                    // margin: 0 auto;
+                    
+                    .funding-info-ul{
+                        display: flex;
+                        justify-content: space-between;
+                        &>li{
+                            border-right: 1px solid #ddd;
+                            // padding: 0 36px;
+                            flex-grow: 1;
+                            &:last-child{
+                                border: none;
+                            }
+                            p{
+                                text-align: center;
+                            }
+                            .p-name{
+                                color: #555;
+                                font-size: 1.8rem;
+                            }
+                            .p-num{
+                                margin-top: 2.3rem;
+                                color: #333;
+                                font-size: 2.8rem;
+                            }
+                            .over-tip{
+                                position: relative;
+                                &::after{
+                                    content: "";
+                                    background: url("http://design.ebiznetworks.co.kr/lhc/nuri_renew/img/new/main/icon_question_mark.png") no-repeat center;
+                                    background-size: cover;
+                                    position: absolute;
+                                    width: 2.2rem;
+                                    height: 2.2rem;
+                                    bottom: 0;
+                                    margin-left: 0.5rem;
+                                    
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .sect-area03{
+                // margin-top: auto;
+                width: 100%;
+                // height: 70px;
+                background-color: #f1f3f4;
+                padding-top: 2.0rem;
+                padding-bottom: 2.1rem;
+                .sect-contents{
+                    .news-area{
+                        display: flex;
+                        align-items: center;
+                        padding-left: 3.0rem;;
+                        .news-title-box{
+                            font-size: 2.2rem;
+                            font-weight: 500;
+                            // width: 500px;
+                            // line-height: 10.82;
+                            position: relative;
+                            display: flex;
+                            align-items: center;
+                            .news-title{
+                                font-size: 2.2rem;
+                                font-weight: 500;
+                                line-height: 1.8;
+                            }
+                            .btn-go-news{
+                                margin-left: 1.0rem;
+                                display: flex;
+                                align-items: center;
+                                justify-content: center;
+                                
+                                width: 2.4rem;
+                                height: 2.4rem;
+                                border: 1px solid #555;
+                                position: relative;
+                                background-color: #fff;
+
+                                // &::before{
+                                //     content: "";
+                                //     width: 72%;
+                                //     height: 2px;
+                                //     background-color: #555;
+                                // }
+                                // &::after{
+                                //     // transform: translateY(-2px);
+                                //     content: "";
+                                //     position: absolute;
+                                //     width: 2px;
+                                //     height: 72%;
+                                //     background-color: #555;
+                                // }
+                                &::after{
+                                    // transform: translateY(-2px);
+                                    content: "+";
+                                    // font-size: 12px;
+                                    
+                                }
+                                
+                            }
+                        }
+
+                        .news-info-area{
+                            display: flex;
+                            align-items: center;
+                            margin-left: 6.8rem;
+                            // width: 714px;
+                            // justify-content: start;
+                            justify-content: start;
+                            .btn-arrow-box{
+                                button{
+                                    // line-height: 1;
+                                    font-size: 0.8rem;
+                                    display: block;
+                                    background: none;
+                                    transform: scaleX(1.2);
+                                }
+                                .btn-arrow-up{
+                                    border-bottom: 1px solid #929393;
+                                    padding-bottom: 0.4rem;
+                                }
+                                .btn-arrow-down{
+                                    padding-top: 0.4rem;
+                                }
+                            }
+                            .news-info-ul{
+                                margin-left: 2.8rem;
+                                max-width: 68.0rem;
+                                width: 100%;
+                                li{
+                                    display: flex;
+                                    // justify-content: space-between;
+                                    .news-name{
+                                        color: #333;
+                                        font-size: 1.8rem;
+                                        line-height: 1.2;
+                                        letter-spacing: -0.45px;
+                                    }
+                                    .news-date{
+                                        color: #333;
+                                        font-size: 1.8rem;
+                                        margin-left: auto;
+                                    }
+                                }
+                            }
+                            
+                        }
+                    }
+                }
+            }
+        }
+        .sect-invest{
+            color: white;
+            background-color: #003399;
+            // justify-content: center;
+            .sect-wrapper{
+                width: 100%;
+
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .sect-contents{
+                    .title-area{
+                        // margin: 0 auto;
+                        text-align: center;
+                        .title-main{
+                            font-size: 5.5rem;
+                        }
+                        .title-sub{
+                            margin-top: 2.8rem;
+                            font-size: 3.5rem;
+                        }
+                    }
+                    .contents-area{
+                        margin-top: 9.6rem;
+                        .invest-ul{
+                            margin: 0 auto;
+                            //width: 100%;
+                            //max-width: 1200px;
+                            display: flex;
+                            justify-content: center;
+                            align-items: stretch;
+                            &>li{
+                                // margin:0 26px;
+                                text-align: center;
+                                display: flex;
+                                flex-direction: column;
+                                width: 25%;
+                                &:first-of-type .txt-box{
+                                    // padding-left: 0;
+                                }
+                                &:last-of-type .txt-box{
+                                    border: none;
+                                    // padding-right: 0; 
+                                }
+                                .img-box{
+                                    img{
+                                        // width: auto;
+                                        width: 12.4rem;
+                                    }
+                                }
+                                .txt-box{
+                                    // padding: 0 4.4rem;
+                                    margin-top: 2.8rem;
+                                    border-right: 1px solid #335cad;
+                                    flex-grow: 1;
+                                    
+
+                                    .p-title{
+                                        color: #4ea9ff;
+                                        font-size: 3.0rem;
+                                        line-height: 3.0rem;
+                                    }
+
+                                    .p-contents{
+                                        font-size: 1.8rem;
+                                        line-height: 1.36;
+                                        margin-top: 3.2rem
+                                    }
+                                }
+                            }
+                        }
+                        .btn-go-invest{
+                            margin: 0 auto;
+                            margin-top: 7.5rem;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .sect-service{
+            background-color: #398fe1;
+            .sect-wrapper{
+                display: flex;
+                justify-content: center;
+                justify-items: center;
+                .sect-contents{
+                    .title-area{
+                        color: white;
+                        text-align: center;
+                        .title-main{
+                            font-size: 5.5rem;
+                        }
+                    }
+
+                    .contents-area{
+                        .service-ul{
+                            display: flex;
+                            // max-width: 1260px;
+                            // width: 100%;
+                            margin: 0 auto;
+                            margin-top: 7.0rem;
+                            padding: 0 4.0rem;
+                            justify-content: space-between;
+                            &>li{
+                                border-radius: 4px;
+                                padding: 0 3.0rem;
+                                padding-top: 5.0rem;
+                                padding-bottom: 3.0rem;
+                                // margin: 0 10px;
+                                background-color: white;
+                                text-align: center;
+                                .title{
+                                    font-size: 3.0rem;
+                                }
+                                .p-txt{
+                                    margin-top: 3.0rem;
+                                    color: #333;
+                                    font-size: 1.8rem;
+                                    font-weight: 300;
+                                    line-height: 1.36;
+                                }
+                                .sub-area{
+                                    .txt-sub-box{
+                                        .p-sub{
+                                            margin-top: 4.2rem;
+                                            color: #333;
+                                            font-size: 1.8rem;
+                                            font-weight: 500;
+                                        }
+                                        .p-hesh{
+                                            margin-top: 4.0rem;
+                                            
+                                        }
+                                        .p-hesh01{
+                                            color: #398fe1;
+                                        }
+                                        .p-hesh02{
+                                            color: #3959e1;
+                                        }
+                                        .p-hesh03{
+                                            color: #00b3be;
+                                        }
+                                    }
+
+
+                                    .btn-go{
+                                        // margin: 0 auto;
+                                        margin-top: 2.8rem;
+                                        position: relative;
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;
+                                        color: white;
+                                        font-size: 2.2rem;
+                                        font-weight: 300;
+                                        border-radius: 0.5rem;
+                                        width: 32.0rem;
+                                        height: 6.0rem;
+                                        .icon-arrow::after{
+                                            content: "⇀";
+                                            font-size: 3.0rem;
+                                            // font-weight: 400;
+                                            line-height: 1.0rem;
+                                            position: absolute;
+                                            top: 50%;
+                                            transform: translateY(-50%) scaleX(1.2);
+                                            
+                                            margin-left: 1.0rem;
+                                        }
+                                    }
+                                    .btn-go01{
+                                        background-color: #398fe1;
+                                    }
+                                    .btn-go02{
+                                        background-color: #3966ed;
+                                    }
+                                    .btn-go03{
+                                        background-color: #00b3be;
+                                    }
+                                }
+                                &:hover{
+                                    position: relative;
+                                    transform: translateY(-1.0rem);
+                                    box-shadow: 0.5rem 0.87rem 2px rgba(0, 0, 0, 0.2);
+                                }
+                            }
+                        }
+                    }
+                    .btn-go-guide{
+                        margin: 0 auto;
+                        margin-top: 7.5rem;
+                    }
+                }
+            }
+                
+        }
+        .sect-advantage{
+            background-color: #126cc3;
+            .sect-wrapper{
+                // width: 1200px;
+                width: 100%;
+                .sect-contents{
+                    display: flex;
+                    border-bottom: 1px solid #89b6e1;
+                    justify-content: space-around;
+                    align-items: center;
+                    &:last-of-type{
+                        border: none;
+                    }
+                    
+                    .title-area{
+                        color: white;
+                        text-align: center;
+                        .title-main{
+                            font-size: 4.0rem;
+                            line-height: 1.3;
+                            font-weight: 500;
+                        }
+                        .title-sub{
+                            font-size: 2.0rem;
+                            margin-top: 4.6rem;
+                            line-height: 1.6;
+                            font-weight: 300;
+                        }
+                    }
+                    .contents-area{
+
+                    }
+
+                }
+
+                .cont01{
+                    padding-bottom: 8.0rem;
+                    .contents-area{
+                        .emphasis-ul{
+                            &>li{
+                                border-radius: 4px;
+                                background-color: white;
+                                width: 45.0rem;
+                                height: 7.0rem;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                margin-bottom: 2.0rem;
+                                font-size: 2.4rem;
+                                &:last-of-type{
+                                    margin-bottom: 0;
+                                }
+                            }
+                        }
+                    }
+                }
+                .cont02{
+                    margin-top: 8.0rem;
+                    .contents-area{
+                        .img-box{
+                            img{
+                                width: 47.9rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .sect-review{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-color: #eee;
+            .sect-wrapper{
+                
+            }
+            .sect-area-review{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                flex-grow: 1;
+                .sect-contents{
+                    .title-main{
+                        text-align: center;
+                        color: #202020;
+                        font-size: 5.5rem;
+                    }
+                    .btn-go-review{
+                        margin: 0 auto;
+                        margin-top: 5.0rem;
+                    }
+                }
+            }
+            .sect-area-banner{
+                .sect-contents{
+                    max-width: none;
+                    .banner-slide-area{
+                        position: relative;
+                        .banner-slide-control{
+                            z-index: 10;
+                            max-width: 1260px;
+                            width: 100%;
+                            margin: 0 auto;
+                            top: 50%;
+                            left: 0;
+                            right: 0;
+                            position: absolute;
+                            .btn-slide{
+                                position: absolute;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                background-color: #422c86;
+                                width: 30px;
+                                height: 50px;
+                                color: white;
+                                // margin-top: ;
+                                transform: translateY(-50%);
+                            }
+                            .btn-slide-prev{
+                                left: 0;
+                            }
+                            .btn-slide-next{
+                                right: 0;
+                            }
+
+                        }
+                        .banner-ul{
+                            height: 15.0rem;
+                            .banner01{
+                                background-color: #5237a7;
+                                height: 100%;
+                                .banner-contents{
+                                    margin: 0 auto;
+                                    max-width: 1260px;
+                                    padding: 0 15.0rem;   
+                                    width: 100%;
+                                    height: 100%;
+                                    display: flex;
+                                    justify-content: space-between;
+                                    align-items: center;
+                                    &>div{
+                                        
+                                    }
+                                    .txt-box{
+                                        
+                                        p{
+                                            color: white;
+                                            letter-spacing: -0.1px;
+                                        }
+                                        .p-title{
+                                            font-size: 2.8rem;
+                                            font-weight: 400;
+                                            .txt-high{
+                                                font-weight: 600;
+                                            }
+                                        }
+                                        .p-contents{
+                                            margin-top: 1.2rem;
+                                            font-size: 1.6rem;
+                                            line-height: 1.4;
+                                        }
+                                        .p-contents-mobile{
+                                            display: none;
+                                        }
+                                        
+                                    }
+                                    .img-box{
+                                        width: 22.7rem;
+                                    }
+                                }
+                                
+                            }
+                            
+                        }
+                    }
+
+                    .miripay-area{
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        .arrow{
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            
+                            background-color: #422c86;
+                            width: 30px;
+                            height: 50px;
+                            span{
+                                font-size: 15px;
+                                font-family: 'Nanum Gothic', sans-serif;
+                                font-weight: 800;
+                                color: white;
+                            }
+                        }
+                        .miripay-ul{
+                            // display: flex;
+                            &>li{
+                                display: flex;
+                                .txt-box{
+                                    color: white;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+
+        .sect-last{
+            // height: 380px;
+            // height: auto;
+            // background-color: #1c99aa;
+            .sect-wrapper{
+                .sect-contents{
+                    
+                }
+            }
+
+            
+
+            .sect-finace{
+                .sect-contents{
+                    // width: 1200px;
+                    // margin: 0 auto;
+                    .finace-area{
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        ul{
+                            display: flex;
+                            align-items: center;
+                            &>li{
+                                
+                            }
+                        }
+                        .finance-ul-left{
+                            &>li{
+                                margin-right: 50px;
+                            }
+                        }
+                        .finance-ul-right{
+                            &>li{
+                                img{
+                                    width: auto;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*sect01-main*/
+@import './_sect01_main';
+
+/*sect02-invest*/
+
+/*메인(메인)-슬라이더 부분*/
+@import './_slide_main';
+
+/*메인(리뷰)-슬라이더 부분*/
+@import './_slide_review';
+
+
+
+@media(max-width: 1260px){
+.main-wrap{
+    .main-container{
+        &>section{
+            .sect-wrapper{
+                width: 100%;
+                .sect-contents{
+                    width: 100%;
+
+                }
+            }
+        }
+
+    }
+}
+}
+
+
+@media(max-width: 720px){
+    .main-wrap{
+        .main-container{
+            padding-top: 17.0rem;
+            &>section{   
+                .sect-wrapper{
+                    .sect-contents{
+             
+                    }
+                }
+            }
+            .sect01{
+                display: flex;
+                flex-direction: column;
+                .sect-area01{
+                    order: 1;
+                }
+                .sect-area02{
+                    order: 3;
+                    .sect-contents{
+                        .title-box{
+                            text-align: center;
+                            .title{
+                                color: #151515;
+                                font-size: 5.2rem;
+                            }
+                            .p-date{
+                                margin-top: 2.5rem;
+                                color: #777;
+                                font-size: 2.4rem;
+                            }
+                        }
+                        .funding-info-ul{
+                            flex-wrap: wrap;
+                            // flex-direction: row;
+                            padding: 4.0rem;
+                            &>li{
+                                // flex-shrink: 1;
+                                // width: 30.0rem;
+                                flex-grow: 0;
+                                width: 40%;
+                                width: 31.0rem;
+                                border: 2px solid #ddd;
+                                padding-top: 4.6rem;
+                                padding-bottom: 4.0rem;
+                                &:last-child{
+                                    border: 2px solid #ddd;
+                                }
+                                &:nth-of-type(n+3){
+                                    // margin-right: 2.0rem;
+                                    margin-top: 2.0rem;
+                                }
+                                p{
+                                    
+                                }
+                                .p-name{
+                                    font-size: 3.15rem;
+                                }
+                                .p-num{
+                      
+                                }
+                                .over-tip{
+                                    position: relative;
+                                    &::after{
+                                        content: "";
+                                        background: url("http://design.ebiznetworks.co.kr/lhc/nuri_renew/img/new/main/icon_question_mark.png") no-repeat center;
+                                        background-size: cover;
+                                        position: absolute;
+                                        width: 2.8rem;
+                                        height: 2.8rem;
+                                        
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                .sect-area03{
+                    order: 2;
+                    .sect-contents{
+                        .news-area{
+
+                            .news-title-box{
+                                
+                                .news-title{
+                         
+                                }
+                                .btn-go-news{
+                         
+    
+                                    // &::before{
+                                    //     content: "";
+                                    //     width: 72%;
+                                    //     height: 2px;
+                                    //     background-color: #555;
+                                    // }
+                                    // &::after{
+                                    //     // transform: translateY(-2px);
+                                    //     content: "";
+                                    //     position: absolute;
+                                    //     width: 2px;
+                                    //     height: 72%;
+                                    //     background-color: #555;
+                                    // }
+                                    &::after{
+                               
+                                        
+                                    }
+                                    
+                                }
+                            }
+    
+                            .news-info-area{
+                                margin-left: 2.0rem;
+                                .btn-arrow-box{
+                                    button{
+                                      
+                                    }
+                                    .btn-arrow-up{
+                                        
+                                    }
+                                    .btn-arrow-down{
+                                       
+                                    }
+                                }
+                                .news-info-ul{
+                                    width: 45.0rem;
+                                    li{
+                                        
+                                        .news-name{
+                                            font-size: 2.75rem;
+                                            overflow-x: hidden;
+                                            text-overflow: ellipsis;
+                                            white-space: nowrap;
+                                        }
+                                        .news-date{
+                                            margin: 0;
+                                            display: none;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            .sect-invest{
+                padding-top: 10.0rem;
+                padding-bottom: 8.0rem;
+                .sect-wrapper{
+
+                    .sect-contents{
+                        .title-area{
+
+                            .title-main{
+         
+                            }
+                            .title-sub{
+ 
+                            }
+                        }
+                        .contents-area{
+          
+                            .invest-ul{
+                                flex-wrap: wrap;
+                                &>li{
+                                    width: 46%;
+                                    &:first-of-type{
+                                        border: 2px solid #335cad;
+                                        border-top: none;
+                                        border-left: none;
+                                    }
+                                    &:nth-of-type(2){
+                                        border-bottom: 2px solid #335cad;
+                                    }
+                                    &:nth-of-type(3){
+                                        border-right: 2px solid #335cad;
+                                    }
+
+                                    &:last-of-type{
+                                        
+                                    }
+                                    &:nth-of-type(-n+2){
+                                        padding-bottom: 3.7rem;
+                                    }
+                                    &:nth-of-type(n+3){
+                                        padding-top: 3.5rem;
+                                    }
+                                    .img-box{
+                                        
+                                        img{
+                                            // width: 12.4rem;
+                                        }
+                                    }
+                                    .txt-box{
+                                        border: none;
+                                        .p-title{
+                                            font-size: 3.5rem;
+                                            line-height: 1;
+                                        }
+    
+                                        .p-contents{
+                                            margin-top: 1.8rem;
+                                            font-size: 2.5rem;
+                                        }
+                                    }
+                                }
+                            }
+                            .btn-go-invest{
+               
+                            }
+                        }
+                    }
+                    
+                }
+            }
+            .sect-service{
+                padding-top: 10.0rem;
+                padding-bottom: 7.0rem;
+                .sect-wrapper{
+                    .sect-contents{
+                        .title-area{
+                            .title-main{
+                                
+                            }
+                        }
+    
+                        .contents-area{
+                            .service-ul{
+                                flex-direction: column;
+                                
+                                &>li{
+                                    border-radius: 0.8rem;
+                                    margin-bottom: 3.8rem;
+                                    padding-left: 6.0rem;
+                                    padding-right: 3.0rem;
+                                    padding-top: 4.6rem;
+                                    padding-bottom: 3.0rem;
+                                    &:last-of-type{
+                                        margin-bottom: 0;
+                                    }
+                                    .title{
+                                        font-size: 4.1rem;
+                                    }
+                                    .title01{
+                                        color: #398fe1;
+                                    }
+                                    .title02{
+                                        color: #3966ed;
+                                    }
+                                    .title03{
+                                        color: #00b3be;
+                                    }
+                                    .p-txt{
+                                        font-size: 2.9rem;
+                                        line-height: 1.26;
+                                    }
+                                    .sub-area{
+                                        display: flex;
+                                        justify-content: space-between;
+                                        align-items: center;
+                                        margin-top: 3.2rem;
+                                        .txt-sub-box{
+                                            .p-sub{
+                                                text-align: left;
+                                                font-size: 3.0rem;
+                                                margin-top: 0;
+                                            }
+                                            .p-hesh{
+                                                text-align: left;
+                                                font-size: 2.6rem;
+                                                margin-top: 1.8rem;
+                                            }
+                                            .p-hesh01{
+                                                
+                                            }
+                                            .p-hesh02{
+                                                
+                                            }
+                                            .p-hesh03{
+                                                
+                                            }
+                                        }
+    
+                                        .btn-go{
+                                            border-radius: 0.8rem;
+                                            width: 9.0rem;
+                                            height: 9.0rem;
+                                            margin-top: 0;
+                                            .icon-arrow::after{
+                                                font-size: 5.0rem;
+                                                top: 48%;
+                                                left: 15%;
+                                            }
+                                            .span-hidden{
+                                                display: none;
+                                            }
+                                        }
+                                        .btn-go01{
+                                            
+                                        }
+                                        .btn-go02{
+                                            
+                                        }
+                                        .btn-go03{
+                                            
+                                        }
+                                    }
+
+                                }
+                            }
+                        }
+                        .btn-go-guide{
+       
+                        }
+                    }
+                }
+                    
+            }
+            .sect-advantage{
+                padding-top: 10.0rem;
+                padding-bottom: 12.3rem;
+                .sect-wrapper{
+                    .sect-contents{
+                        flex-direction: column;
+                        &:last-of-type{
+          
+                        }
+                        
+                        .title-area{
+                 
+                            .title-main{
+                                font-size: 4.8rem;
+                                letter-spacing: -0.34rem;
+                            }
+                            .title-sub{
+                                font-size: 2.8rem;
+                            }
+                        }
+                        .contents-area{
+                            
+                        }
+    
+                    }
+    
+                    .cont01{
+                        .contents-area{
+                            margin-top: 5.8rem;
+                            .emphasis-ul{
+                                &>li{
+                                    width: 60.0rem;
+                                }
+                            }
+                        }
+                    }
+                    .cont02{
+                        .contents-area{
+                            margin-top: 13.4rem;
+                        }
+                    }
+                }
+            }
+            .sect-review{
+                padding-top: 10.0rem;
+                padding-bottom: 8.8rem;
+
+                .sect-wrapper{
+                    .sect-contents{
+                        .title-main{
+                            font-size: 5.2rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.test-box{
+    width: 500px;
+    height:200px;
+    background: radial-gradient(#0000008f, #1e9cc200, #1e9cc200);
+    border-radius: 50%;
+}
+
+
+@keyframes test {
+	0% {background-position:0% 50%; }
+    50% {background-position:100% 50%;}
+    100% {background-position:0% 50%; }
+}
+
+@-webkit-keyframes test 
+{
+    0%{background-position:0% 50%} 
+    50%{background-position:100% 50%} 
+    100%{background-position:0% 50%} 
+}
+
+
+

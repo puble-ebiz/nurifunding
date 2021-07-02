@@ -1,0 +1,128 @@
+// .pop-non-scroll{
+//     overflow:hidden;
+// }
+
+.pop-duble{
+    z-index: 200;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: none;
+    img{
+        vertical-align: middle;
+        width: 100%;
+    }
+
+    .pop-area{
+        // display: flex;
+        position: absolute;
+        // max-width: 900px;
+        // width: 100%;
+        // position: relative;
+        // top: 140px;
+        width: 0;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        .pop-box{
+            position: absolute;
+            // position: relative;
+            width: 42.0rem;
+            transform: translateX(-50%);
+            top: 14.0rem;
+            // left: 0;
+            // right: 0;
+            // margin: 0 auto;
+        }
+    }
+    
+}
+
+.pop-duble .pop01{
+    // left: -420px;
+    // right: 0;
+    left: -22.0rem;
+    z-index: 10;
+}
+
+.pop-duble .pop02{
+    left: 22.0rem;
+}
+
+
+
+.pop-duble .pop-box .pop-main-box{
+
+}
+
+.pop-duble .pop-box .pop-main-box .img-pc{
+    display: block;
+}
+.pop-duble .pop-box .pop-main-box .img-m{
+    display: none;
+}
+
+.pop-duble .pop-box .pop-btn-box{
+    background-color: #fff;
+    height: 4.2rem;
+    display: flex;
+    width: 100%;
+}
+
+.pop-duble .pop-box .pop-btn-box button{
+    width: 50%;
+    height: 100%;
+    outline: none;
+    color: #666;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.pop-duble .pop-box .pop-btn-box{
+    border-top: solid 1px #ccc;
+}
+.pop-duble .pop-box .pop-btn-box .btn-not-day{
+    border-right: solid 1px #ccc;
+}
+
+
+@media (max-width:720px){
+    .pop-duble{
+        .pop-area{
+            // position: fixed;
+            // position: fixed;
+            // top: 20%;
+            // transform: translateY(-50%);
+            .pop-box{
+                position: absolute;
+                // width: calc(600/720 *100vw);
+                width: 60.0rem;
+                transform: translateX(-50%) translateY(-50%);
+                top: 50%;
+                left: 0;
+                right: 0;
+                margin: 0 auto;
+            }
+        }
+    }
+
+    .pop-duble .pop-box .pop-main-box .img-pc{
+        display: none;
+    }
+    .pop-duble .pop-box .pop-main-box .img-m{
+        display: block;
+    }
+    
+    .pop-duble .pop-box .pop-btn-box{
+        height: 8.2rem;
+    }
+    .pop-duble .pop-box .pop-btn-box button{
+        font-size: 2.8rem;
+    }
+    
+    
+    
+}

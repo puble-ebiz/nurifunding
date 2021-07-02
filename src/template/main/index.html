@@ -1,0 +1,193 @@
+@@include('../include/_head_top.html')
+
+@@include('../include/_head_bottom.html', { "pageName": "main" })
+
+<main class="main-wrap container" role="main">
+    <div class="main-container fullpage-area">
+
+        @@include('./_list_sect/_sect01.html')
+        @@include('./_list_sect/_sect02.html')
+        @@include('./_list_sect/_sect03.html')
+        @@include('./_list_sect/_sect04.html')
+        @@include('./_list_sect/_sect_last.html')
+
+    </div>
+    <div class="aside-page-control"></div>
+
+    <div class="aside-fn">
+        <div class="fn-box">
+            <button type="button" class="btn-open-request">
+                <img src="https://www.nurifunding.co.kr/img/new/main/btn_open_request.png" alt="문의하기">
+            </button>
+            <button type="button" class="btn-scroll-up">
+                <img src="http://design.ebiznetworks.co.kr/lhc/nuri_renew/img/new/main/btn_scroll_up.png" alt="위로">
+            </button>
+        </div>
+    </div>
+
+    @@include('./_etc/_request.html')
+
+    <!-- 팝업(리브메이트, 온투법)[통합신규] -->
+    <!-- <link rel="stylesheet" href="/static/css/pop/pop_duble_contents2.css">
+    <div class="pop-area-box" style="display: block;">
+        <div class="pop-box">
+            <div class="pop-main-box pop01">
+                <a href="https://www.nurifunding.co.kr/notice/view.php?var=EUpx&amp;page=1">
+                    <img src="https://www.nurifunding.co.kr/img/notice/200202_notice_pop.jpg" alt="온투법 팝업">
+                </a>
+            </div>
+            <div class="pop-main-box pop02">
+                <a href="https://www.nurifunding.co.kr/notice/view.php?var=EU11&amp;page=1">
+                    <img src="https://www.nurifunding.co.kr/img/notice/200202_liiv_pop.jpg" alt="리브메이트 팝업">
+                </a>
+            </div>
+            <div class="pop-btn-box">
+                <button class="btn-not-day" type="button">오늘 하루 보지 않기</button>
+                <button class="btn-close-pop" type="button">창 닫기</button>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            //쿠키이름
+            let cokieName = "pop_duble";
+
+            //하루 안보기 체크하기
+            if ($.cookie(cokieName) == undefined) {
+
+                //스크롤 막기
+                $(".pop-area-box").show();
+                $('html, body').addClass('pop-non-scroll');
+            }
+
+            //닫기 버튼
+            $(".pop-area-box .btn-close-pop").on('click', function() {
+                //선택된 팝업창 숨기기
+                let popBox = $(".pop-area-box");
+                popBox.hide();
+                $('html, body').removeClass("pop-non-scroll");
+            });
+            //하루 안보기 버튼
+            $(".pop-area-box .btn-not-day").on('click', function() {
+                //선택된 팝업창 숨기기
+                let popBox = $(".pop-area-box")
+                addCookieData(cokieName);
+                popBox.hide();
+                $('html, body').removeClass("pop-non-scroll");
+            });
+
+        });
+
+        //쿠키데이터 등록
+        addCookieData = function(popName) {
+            if ($.cookie(popName) == undefined) {
+                //초단위 테스트용
+                // var date = new Date;
+                // date.setTime(date.getTime() + 5*1000);
+                //쿠키가 없는 경우 testCookie 쿠키를 추가
+                let date = 1; //하루
+                $.cookie(popName, 'Y', {
+                    expires: date
+                });
+                //$.removeCookie('pop_duble');
+            }
+        }
+    </script> -->
+
+</main>
+<!-- /.main.container -->
+
+<!-- <script type="text/javascript" src="/static/js/etc/fullpage-scroll.js"></script> -->
+
+
+<script type="text/javascript">
+    //메인용 스크립트
+    $(document).ready(function () {
+
+        //풀페이지 관련
+        let fullpage = new setFullpage(".fullpage-area", "section", 400, true, ".aside-page-control", ".header-new .nav-sect");
+
+        //이벤트 세팅(event-list.js 파일)
+        fullpage.setEventList(getEventList());
+
+
+        //팝업 관련(문의하기)
+        // let getInfo= fullpage.getInfo();
+        $('.btn-open-request').on("click", function () {
+            $(".modal-request").show();
+            // getInfo.setOn = false;
+            // fullpage.setInfo(getInfo);
+
+            $("html,body").addClass("pop-non-scroll");
+            // console.log("작동");
+            fullpage.setOn(false);
+        });
+
+        $('.modal-request .btn-close-request').on("click", function () {
+            $(".modal-request").hide();
+            // getInfo.setOn = true;
+            // fullpage.setInfo(getInfo);
+
+            fullpage.setOn(true);
+            $(".pop-non-scroll").removeClass("pop-non-scroll");
+        });
+
+        $('.modal-request .btn-detail-policy').on("click", function () {
+            $(".policy-box .policy-bottom").toggle();
+            $(".policy-box .policy-top .icon-arrow-top").toggle();
+        });
+
+        $('.btn-scroll-up').on("click", function () {
+            fullpage.goIndex(0);
+        });
+
+        //../팝업 관련(문의하기)
+
+    });
+
+</script>
+<!-- <script>
+    $(document).ready(function(){
+        $(window).keyup(function() {
+            setMoveUpAni('.sect-invest .invest-ul li',150, 500, 100);
+            setMoveUpAni('.sect-invest .title-area *',-500, 500, 250);
+            setMoveUpAni('.sect-invest .btn-go-invest',400, 800);
+        });
+    });
+
+    let setMoveUpAni = function(name, start, delay, oderDelay = 0){
+        $(name).each(function(index,item){    
+
+            //초기세팅
+            let box = $(this);
+            box.css({"transform":"translateY("+(start)+"%)"});
+
+            box.css({'opacity':0.2})
+            box.fadeTo(delay,1.0,function(){});
+
+            $({boxPos: start}).animate({
+                boxPos: 0
+            },
+            {
+                duration: delay + (index*oderDelay),
+                easing:'swing',
+                step: function() {
+                    box.css({"transform":"translateY(" + this.boxPos+"%)"});
+
+                        // console.log("이벤트");
+                },
+                complete: function() {
+                    box.css({"transform":"translateY("+(0)+"%)"});
+                }
+            });
+
+
+        });
+    }
+
+
+</script> -->
+
+
+@@include('../include/_bottom.html')
